@@ -12,7 +12,7 @@
       color-space="sRGB" 
       renderer="colorManagement: true, physicallyCorrectLights" 
       vr-mode-ui="enabled: false" 
-      device-orientation-permission-ui="enabled: false">
+      device-orientation-permission-ui="enabled: true">
 
       <!-- Assets -->
       <a-assets>
@@ -37,11 +37,11 @@
         </a-plane>
         <!-- 3D Model -->
         <a-gltf-model 
-          src="#avatarModel" 
-          position="0 0 0.1" 
-          scale="0.005 0.005 0.005" 
-          rotation="0 0 0" 
-          animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+         src="#avatarModel" 
+         position="0 0 0.1" 
+         scale="0.005 0.005 0.005" 
+         rotation="0 0 0" 
+         animation="property: position; to: 0 0 0.1; dur: 0; easing: linear; loop: false">
         </a-gltf-model>
       </a-entity>
 
